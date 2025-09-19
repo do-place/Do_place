@@ -3,93 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>do.place - Your Digital Destination</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Do.place Academy - E-commerce Course & Job Placement</title>
+    <style>
+        /* --- Google Font --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* --- Basic Reset & Dark Theme --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text */
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background: rgba(18, 18, 18, 0.8);
+            border-bottom: 1px solid #333;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #00aaff; /* Accent color */
+        }
+        
+        /* --- Hero Section --- */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            padding: 40px 0;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 3.2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .btn {
+            background-color: #00aaff;
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background-color: #0088cc;
+            transform: translateY(-3px);
+        }
+
+        /* --- Common Section Styling --- */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 170, 255, 0.1);
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #00aaff;
+        }
+
+        /* --- Success Path Section --- */
+        .path-card {
+            position: relative;
+            text-align: left;
+        }
+
+        .step-number {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 3em;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* --- Footer --- */
+        footer {
+            background: #1e1e1e;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2em; }
+            .hero p { font-size: 1em; }
+        }
+
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <nav class="container">
-            <div class="logo">
-                <a href="#">do.place</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content container">
-            <h1>Welcome to do.place</h1>
-            <p>Your ultimate platform for digital solutions. Innovate. Create. Succeed.</p>
-            <button class="cta-button">Get Started</button>
-             <div class="hero-image">
-                
-            </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Do<span>.place</span> Academy</a>
+            </nav>
         </div>
     </header>
 
-    <section id="about" class="about-section container">
-        <h2>What We Do</h2>
-        <div class="about-grid">
-            <div class="about-item">
-                <h3>Innovation</h3>
-                <p>We bring fresh ideas to life, transforming concepts into powerful digital experiences.</p>
-            </div>
-            <div class="about-item">
-                <h3>Development</h3>
-                <p>Our expert team crafts robust and scalable web and mobile applications.</p>
-            </div>
-            <div class="about-item">
-                <h3>Strategy</h3>
-                <p>Guiding you with tailored digital strategies for measurable growth and success.</p>
-            </div>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>E-commerce सीखो और अपना Career बनाओ</h1>
+            <p>4 महीने की एक्सपर्ट ट्रेनिंग और 3 महीने की प्रैक्टिकल इंटर्नशिप के साथ पाएं अपनी ड्रीम जॉब। 100% प्लेसमेंट असिस्टेंस।</p>
+            <a href="#" class="btn">Enroll Now</a>
         </div>
     </section>
 
-    <section id="services" class="services-section">
+    <section class="section">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-cards">
+            <h2 class="section-title">इस कोर्स में क्या खास है?</h2>
+            <div class="grid">
                 <div class="card">
-                    <h3>Web Development</h3>
-                    <p>From stunning designs to powerful functionalities, we build websites that work.</p>
+                    <h3>Comprehensive Curriculum</h3>
+                    <p>Shopify, Amazon FBA, Digital Marketing और Supply Chain Management में एक्सपर्ट बनें।</p>
                 </div>
                 <div class="card">
-                    <h3>Mobile Apps</h3>
-                    <p>Native and hybrid app development for iOS and Android, bringing your ideas to mobile.</p>
+                    <h3>Work on Live Projects</h3>
+                    <p>थ्योरी नहीं, असली कंपनियों के लाइव प्रोजेक्ट्स पर काम करके प्रैक्टिकल एक्सपीरियंस हासिल करें।</p>
                 </div>
                 <div class="card">
-                    <h3>Digital Marketing</h3>
-                    <p>Reach your audience effectively with our SEO, SMM, and content marketing strategies.</p>
-                </div>
-                <div class="card">
-                    <h3>UI/UX Design</h3>
-                    <p>Creating intuitive and engaging user interfaces for an exceptional user experience.</p>
+                    <h3>Expert Mentors</h3>
+                    <p>इंडस्ट्री के टॉप एक्सपर्ट्स से सीखें जो आपको पर्सनल गाइडेंस और सपोर्ट देंगे।</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section class="section" style="background-color: #1e1e1e;">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <p>Have a project in mind? Let's discuss how do.place can help you achieve your goals.</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <h2 class="section-title">हमारा 3-Step Success Path</h2>
+            <div class="grid">
+                <div class="card path-card">
+                    <div class="step-number">1</div>
+                    <h3>4-Month Learning</h3>
+                    <p>पहले 4 महीनों में, आप E-commerce की हर बारीकी को बेसिक से एडवांस लेवल तक सीखेंगे।</p>
+                </div>
+                <div class="card path-card">
+                    <div class="step-number">2</div>
+                    <h3>3-Month Internship</h3>
+                    <p>अगले 3 महीने आप हमारी पार्टनर कंपनियों के साथ काम सीखेंगे और अपना पोर्टफोलियो बनाएंगे।</p>
+                </div>
+                <div class="card path-card">
+                    <div class="step-number">3</div>
+                    <h3>Job Placement</h3>
+                    <p>इंटर्नशिप के बाद, हम आपको टॉप कंपनियों में जॉब इंटरव्यू के लिए भेजेंगे और प्लेसमेंट में मदद करेंगे।</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 do.place. All rights reserved.</p>
+            <p>&copy; 2025 Do.place Academy. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
