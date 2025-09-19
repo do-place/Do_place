@@ -1,480 +1,180 @@
-<!DOCTYPE html>
-
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html><html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>do.place Academy - Unlock Your Career in E-commerce</title>
-
-code
-Code
-download
-content_copy
-expand_less
-
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Google Fonts: Poppins -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- Lottie Player for Animations -->
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-<!-- Custom Styles and Animations -->
-<style>
-    /* Define custom font and colors for Tailwind */
-    body {
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    :root {
-        --primary-blue: #007BFF;
-        --secondary-yellow: #FFC107;
-    }
-
-    .bg-primary { background-color: var(--primary-blue); }
-    .text-primary { color: var(--primary-blue); }
-    .border-primary { border-color: var(--primary-blue); }
-
-    .bg-secondary { background-color: var(--secondary-yellow); }
-    .text-secondary { color: var(--secondary-yellow); }
-    .border-secondary { border-color: var(--secondary-yellow); }
-    
-    /* On-scroll fade-in-up animation */
-    .fade-in-up {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    
-    .fade-in-up.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    /* FAQ Accordion arrow transition */
-    .accordion-arrow {
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .accordion-button[aria-expanded="true"] .accordion-arrow {
-        transform: rotate(180deg);
-    }
-
-    /* Heading accent style */
-    .heading-accent {
-        position: relative;
-        display: inline-block;
-    }
-    .heading-accent::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 60px;
-        height: 4px;
-        background-color: var(--secondary-yellow);
-        border-radius: 2px;
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>do.place Academy - Learn E-Commerce Skills</title>
+  <meta name="description" content="do.place Academy - Learn E-commerce skills with expert training, hands-on projects, and job placement support.">
+  <meta name="keywords" content="E-commerce, digital marketing, online business, do.place Academy, job placement, skills training">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
-<body class="bg-white text-gray-900">
-
-code
-Code
-download
-content_copy
-expand_less
-IGNORE_WHEN_COPYING_START
-IGNORE_WHEN_COPYING_END
-<!-- =========== Header =========== -->
-<header class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <!-- UPDATED HEADLINE WITH SPECIFIC COLORS -->
-        <a href="#home" class="text-2xl font-bold">
-            <span class="text-gray-900">do.place</span>
-            <span class="text-primary">Academy</span>
-        </a>
-        <nav class="hidden md:flex space-x-8">
-            <a href="#home" class="text-gray-700 hover:text-primary transition-colors duration-300">Home</a>
-            <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-300">Why Us?</a>
-            <a href="#program" class="text-gray-700 hover:text-primary transition-colors duration-300">Program</a>
-            <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors duration-300">Testimonials</a>
-            <a href="#contact" class="text-gray-700 hover:text-primary transition-colors duration-300">Contact</a>
-        </nav>
-        <button id="mobile-menu-button" class="md-hidden">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-        </button>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">  <!-- Navbar -->  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">do.place Academy</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#why-us" class="hover:text-indigo-600">Why Us</a>
+        <a href="#program" class="hover:text-indigo-600">Program</a>
+        <a href="#stats" class="hover:text-indigo-600">Stats</a>
+        <a href="#testimonials" class="hover:text-indigo-600">Testimonials</a>
+        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button id="dark-mode-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-700">🌙</button>
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg bg-gray-200 dark:bg-gray-700">☰</button>
+      </div>
     </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
-        <a href="#home" class="block py-2 text-gray-700 hover:text-primary">Home</a>
-        <a href="#about" class="block py-2 text-gray-700 hover:text-primary">Why Us?</a>
-        <a href="#program" class="block py-2 text-gray-700 hover:text-primary">Program</a>
-        <a href="#testimonials" class="block py-2 text-gray-700 hover:text-primary">Testimonials</a>
-        <a href="#contact" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 px-4 pb-4">
+      <a href="#why-us" class="block py-2">Why Us</a>
+      <a href="#program" class="block py-2">Program</a>
+      <a href="#stats" class="block py-2">Stats</a>
+      <a href="#testimonials" class="block py-2">Testimonials</a>
+      <a href="#faq" class="block py-2">FAQ</a>
     </div>
-</header>
-
-<main>
-    <!-- =========== Hero Section =========== -->
-    <section id="home" class="bg-gray-50 min-h-screen flex items-center pt-24 md:pt-20">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-            <!-- Text Content -->
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight fade-in-up">
-                    Unlock Your Career in <span class="text-primary">E-commerce</span>
-                </h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-xl mx-auto md:mx-0 fade-in-up" style="transition-delay: 0.2s;">
-                    Our program gives you practical skills and expert knowledge to thrive in the world of online business.
-                </p>
-                <a href="https://forms.gle/cL7yquqgjz2vWfyj8" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 transform transition-all duration-300 fade-in-up" style="transition-delay: 0.4s;">
-                    Enroll Now
-                </a>
-            </div>
-            <!-- Animated Character -->
-            <div class="fade-in-up" style="transition-delay: 0.3s;">
-                <lottie-player src="https://lottie.host/e2b7a02c-567a-42c2-8080-4c8d5069f2a9/UEwSj307gK.json" background="transparent" speed="1" style="width: 100%; max-width: 500px; margin: auto;" loop autoplay></lottie-player>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========== Why Choose Us? Section =========== -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-3xl md:text-4xl font-bold heading-accent">Why Choose Us?</h2>
-                <p class="text-gray-600 mt-4 pt-2">The do.place Academy Advantage</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Feature Card 1 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in-up" style="transition-delay: 0.1s;">
-                    <lottie-player src="https://lottie.host/97330545-3b7c-4835-9856-8a56f8495036/e0S4iUNM46.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: auto;" loop autoplay></lottie-player>
-                    <h3 class="text-xl font-bold mb-2 mt-4">Expert Instructors</h3>
-                    <p class="text-gray-600">Learn from industry veterans who bring real-world experience and insights into the classroom.</p>
-                </div>
-                <!-- Feature Card 2 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in-up" style="transition-delay: 0.2s;">
-                    <lottie-player src="https://lottie.host/5a02251a-788c-4239-8664-9f88b0a51966/a45nEC2s5c.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: auto;" loop autoplay></lottie-player>
-                    <h3 class="text-xl font-bold mb-2 mt-4">Hands-On Practical Training</h3>
-                    <p class="text-gray-600">Go beyond theory with live projects and case studies that build a strong, job-ready portfolio.</p>
-                </div>
-                <!-- Feature Card 3 -->
-                <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in-up" style="transition-delay: 0.3s;">
-                    <lottie-player src="https://lottie.host/c55047b1-21a4-43ea-9233-685b88235760/Iq83aI5Y4f.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: auto;" loop autoplay></lottie-player>
-                    <h3 class="text-xl font-bold mb-2 mt-4">Guaranteed Job Assistance</h3>
-                    <p class="text-gray-600">We provide dedicated support for resume building, interview prep, and connecting you with top employers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========== How Our Program Works Section =========== -->
-    <section id="program" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16 fade-in-up">
-                <h2 class="text-3xl md:text-4xl font-bold heading-accent">How Our Program Works</h2>
-                <p class="text-gray-600 mt-4 pt-2">Your Journey to an E-commerce Expert</p>
-            </div>
-            <div class="relative">
-                <!-- Connecting line -->
-                <div class="hidden md:block absolute top-16 left-0 w-full h-1 bg-blue-200"></div>
-                
-                <div class="grid md:grid-cols-3 gap-12 relative">
-                    <!-- Step 1 -->
-                    <div class="text-center fade-in-up" style="transition-delay: 0.1s;">
-                        <div class="relative">
-                           <lottie-player src="https://lottie.host/5d625d81-e374-4d1a-82c5-167819f39003/w7yL65t4Ro.json" background="transparent" speed="1" style="width: 120px; height: 120px; margin: auto;" loop autoplay></lottie-player>
-                            <div class="w-16 h-16 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold z-10 relative mt-4">1</div>
-                        </div>
-                        <h3 class="text-xl font-bold mt-6 mb-2">4-Month Intensive Course</h3>
-                        <p class="text-gray-600">Master the fundamentals and advanced concepts of e-commerce, from marketing to logistics, through our comprehensive curriculum.</p>
-                    </div>
-                    <!-- Step 2 -->
-                    <div class="text-center fade-in-up" style="transition-delay: 0.2s;">
-                       <div class="relative">
-                           <lottie-player src="https://lottie.host/505187e4-2d52-4770-85f0-b96434442a5d/I2pao5C671.json" background="transparent" speed="1" style="width: 120px; height: 120px; margin: auto;" loop autoplay></lottie-player>
-                            <div class="w-16 h-16 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold z-10 relative mt-4">2</div>
-                        </div>
-                        <h3 class="text-xl font-bold mt-6 mb-2">3-Month Practical Training</h3>
-                        <p class="text-gray-600">Apply your knowledge by working on real-world projects, building an impressive portfolio that showcases your skills to employers.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="text-center fade-in-up" style="transition-delay: 0.3s;">
-                       <div class="relative">
-                            <lottie-player src="https://lottie.host/e226e3de-f495-4b13-a0e0-31627e7d9b3a/A04mmj9XfG.json" background="transparent" speed="1" style="width: 120px; height: 120px; margin: auto;" loop autoplay></lottie-player>
-                            <div class="w-16 h-16 mx-auto bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold z-10 relative mt-4">3</div>
-                        </div>
-                        <h3 class="text-xl font-bold mt-6 mb-2">Career Placement</h3>
-                        <p class="text-gray-600">Receive personalized job assistance, including resume workshops, mock interviews, and access to our exclusive network of hiring partners.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========== Testimonials Section =========== -->
-    <section id="testimonials" class="py-20 bg-yellow-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12 fade-in-up">
-                <h2 class="text-3xl md:text-4xl font-bold heading-accent">What Our Students Say</h2>
-                <p class="text-gray-600 mt-4 pt-2">Success stories from our graduates.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonial Card 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg fade-in-up" style="transition-delay: 0.1s;">
-                    <p class="text-gray-600 mb-6">"The hands-on training was a game-changer. I felt confident in my interviews and landed a great job just weeks after completing the program. Highly recommended!"</p>
-                    <div class="flex items-center">
-                        <img src="https://storage.googleapis.com/aai-web-template-themes/do-place-academy/priya-sharma.png" alt="Priya Sharma" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <h4 class="font-bold">Priya Sharma</h4>
-                            <p class="text-sm text-primary font-semibold">E-commerce Specialist</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial Card 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg fade-in-up" style="transition-delay: 0.2s;">
-                    <p class="text-gray-600 mb-6">"The instructors are incredibly knowledgeable and supportive. They don't just teach; they mentor you for success in the real world."</p>
-                    <div class="flex items-center">
-                        <img src="https://storage.googleapis.com/aai-web-template-themes/do-place-academy/rohan-kumar.png" alt="Rohan Kumar" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <h4 class="font-bold">Rohan Kumar</h4>
-                            <p class="text-sm text-primary font-semibold">Digital Marketing Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial Card 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg fade-in-up md:col-span-2 lg:col-span-1" style="transition-delay: 0.3s;">
-                    <p class="text-gray-600 mb-6">"I came with zero background in e-commerce and left with a full-time job. This academy truly delivers on its promises. The career assistance is top-notch."</p>
-                    <div class="flex items-center">
-                        <img src="https://storage.googleapis.com/aai-web-template-themes/do-place-academy/anjali-singh.png" alt="Anjali Singh" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <h4 class="font-bold">Anjali Singh</h4>
-                            <p class="text-sm text-primary font-semibold">Marketplace Analyst</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========== FAQ Section =========== -->
-    <section id="faq" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6 max-w-3xl">
-            <div class="text-center mb-12 fade-in-up">
-                <h2 class="text-3xl md:text-4xl font-bold heading-accent">Frequently Asked Questions</h2>
-                <p class="text-gray-600 mt-4 pt-2">Have questions? We have answers.</p>
-            </div>
-            <div class="space-y-4 fade-in-up">
-                <!-- FAQ Item 1 -->
-                <div class="bg-white rounded-lg shadow-md">
-                    <h2>
-                        <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-left accordion-button" aria-expanded="false">
-                            <span>Are there any prerequisites for this course?</span>
-                            <svg class="w-6 h-6 accordion-arrow text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                    </h2>
-                    <div class="accordion-content hidden">
-                        <div class="p-6 pt-0">
-                            <p class="text-gray-600">No, there are no specific prerequisites! Our program is designed for individuals from all backgrounds. All you need is a passion for learning and a drive to succeed in the e-commerce industry.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- FAQ Item 2 -->
-                <div class="bg-white rounded-lg shadow-md">
-                    <h2>
-                        <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-left accordion-button" aria-expanded="false">
-                            <span>What is the course fee and are there any EMI options?</span>
-                            <svg class="w-6 h-6 accordion-arrow text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                    </h2>
-                    <div class="accordion-content hidden">
-                        <div class="p-6 pt-0">
-                            <p class="text-gray-600">For detailed information on course fees and available EMI options, please get in touch with our admissions team. We offer several flexible payment plans to make the program accessible.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- FAQ Item 3 -->
-                <div class="bg-white rounded-lg shadow-md">
-                    <h2>
-                        <button type="button" class="flex items-center justify-between w-full p-6 font-semibold text-left accordion-button" aria-expanded="false">
-                            <span>What kind of job can I get after this program?</span>
-                            <svg class="w-6 h-6 accordion-arrow text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                    </h2>
-                    <div class="accordion-content hidden">
-                        <div class="p-6 pt-0">
-                            <p class="text-gray-600">Graduates are well-prepared for roles such as E-commerce Manager, Digital Marketing Specialist, Marketplace Analyst, Supply Chain Coordinator, and more. Our career services team will help you identify the best fit for your skills and interests.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========== AI Career Counselor (Gemini API Feature) =========== -->
-    <section id="ai-counselor" class="py-20 bg-white">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="text-center mb-12 fade-in-up">
-                 <h2 class="text-3xl md:text-4xl font-bold heading-accent">
-                    AI Career Counselor
-                </h2>
-                <p class="text-gray-600 mt-4 pt-2">E-commerce career se juda koi bhi sawaal puchiye</p>
-            </div>
-            <div class="bg-gray-50 p-8 rounded-lg shadow-lg fade-in-up grid md:grid-cols-3 gap-8 items-center">
-                <div class="hidden md:block">
-                     <lottie-player src="https://lottie.host/88c26788-0248-4e80-82a8-86d7c2a297e5/Hh91qVB2zW.json" background="transparent" speed="1" style="width: 100%;" loop autoplay></lottie-player>
-                </div>
-                <div class="md:col-span-2">
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <input type="text" id="ai-counselor-input" placeholder="Jaise: E-commerce manager ki salary kitni hoti hai?" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
-                        <button id="ai-counselor-button" class="bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 flex items-center justify-center disabled:bg-blue-300 whitespace-nowrap">
-                            <span class="mr-2">✨ Puchiye</span>
-                            <!-- Loading Spinner -->
-                            <svg id="loading-spinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="ai-counselor-response" class="mt-6 p-4 bg-blue-50 border-l-4 border-primary text-gray-700 rounded-md min-h-[50px]">
-                        Aapka jawaab yahan dikhega...
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- =========== Footer =========== -->
-<footer id="contact" class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-6 text-center">
-        <h3 class="text-2xl font-bold mb-2 text-secondary">Ready to Start Your Journey?</h3>
-        <p class="text-gray-400 mb-6">Contact us today to learn more and take the first step towards your new career.</p>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
-            <a href="mailto:Do.placeandrec@gmail.com" class="hover:text-secondary transition-colors">Do.placeandrec@gmail.com</a>
-            <span class="hidden md:block text-gray-500">|</span>
-            <a href="tel:+918989486507" class="hover:text-secondary transition-colors">+91 89894 86507</a>
-        </div>
-        <!-- Social Media Icons -->
-        <div class="flex justify-center space-x-6 mb-8">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
-        </div>
-        <div class="border-t border-gray-700 pt-6 mt-6 text-sm text-gray-400">
-            <p>&copy; 2024 do.place Academy. All Rights Reserved.</p>
-        </div>
+  </header>  <!-- Hero -->  <section class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
+      <h2 class="text-4xl font-bold mb-4"> <span id="typed-text"></span></h2>
+      <p class="text-lg mb-6">Build skills, gain hands-on experience, and secure your future in the digital economy.</p>
+      <a href="https://forms.gle/dgdouEJm8ykmUNdK8" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition">Enroll Now</a>
     </div>
-</footer>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // --- On-Scroll Animation Logic ---
-        const animatedElements = document.querySelectorAll('.fade-in-up');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-        animatedElements.forEach(el => observer.observe(el));
-
-        // --- FAQ Accordion Logic ---
-        const accordionButtons = document.querySelectorAll('.accordion-button');
-        accordionButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.parentElement.nextElementSibling;
-                const isExpanded = button.getAttribute('aria-expanded') === 'true';
-                button.setAttribute('aria-expanded', !isExpanded);
-                content.classList.toggle('hidden');
-            });
-        });
-
-        // --- Mobile Menu Toggle ---
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-        mobileMenuLinks.forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
-
-        // --- Gemini AI Counselor Logic ---
-        const counselorButton = document.getElementById('ai-counselor-button');
-        const counselorInput = document.getElementById('ai-counselor-input');
-        const counselorResponse = document.getElementById('ai-counselor-response');
-        const loadingSpinner = document.getElementById('loading-spinner');
-
-        async function fetchWithBackoff(url, options, retries = 3, delay = 1000) {
-            for (let i = 0; i < retries; i++) {
-                try {
-                    const response = await fetch(url, options);
-                    if (response.ok) return response;
-                    if (response.status >= 400 && response.status < 500) {
-                       throw new Error(`API call failed with status: ${response.status}`);
-                    }
-                } catch (error) {
-                    if (i === retries - 1) throw error;
-                }
-                await new Promise(resolve => setTimeout(resolve, delay * Math.pow(2, i)));
-            }
-        }
-        
-        counselorButton.addEventListener('click', async () => {
-            const userQuery = counselorInput.value.trim();
-            if (!userQuery) {
-                counselorResponse.innerText = 'Kripya apna sawaal likhein.';
-                return;
-            }
-
-            loadingSpinner.classList.remove('hidden');
-            counselorButton.disabled = true;
-            counselorResponse.innerText = 'Jawaab generate ho raha hai, kripya intezaar karein...';
-
-            const apiKey = "";
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-            
-            const systemPrompt = "You are a friendly and encouraging career counselor for do.place Academy, an institute specializing in e-commerce training. Your goal is to provide helpful, concise, and positive answers to prospective students' questions about careers in e-commerce in India. Keep your answers to 2-3 sentences. Always maintain a supportive tone. Respond in simple, easy-to-understand Hindi (written in the Latin script, e.g., 'Hinglish').";
-
-            const payload = {
-                contents: [{ parts: [{ text: userQuery }] }],
-                systemInstruction: { parts: [{ text: systemPrompt }] },
-            };
-
-            try {
-                const response = await fetchWithBackoff(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-
-                const result = await response.json();
-                const candidate = result.candidates?.[0];
-
-                if (candidate && candidate.content?.parts?.[0]?.text) {
-                    counselorResponse.innerText = candidate.content.parts[0].text;
-                } else {
-                    counselorResponse.innerText = 'Maaf kijiye, kuch gadbad ho gayi. Kripya dobara koshish karein.';
-                }
-
-            } catch (error) {
-                console.error("Error calling Gemini API:", error);
-                counselorResponse.innerText = 'Maaf kijiye, hum abhi aapke sawaal ka jawaab nahi de sakte. Network connection check karein.';
-            } finally {
-                loadingSpinner.classList.add('hidden');
-                counselorButton.disabled = false;
-            }
-        });
-         counselorInput.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                counselorButton.click();
-            }
-        });
+    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center" data-aos="fade-left">
+      <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay aria-hidden="true"></lottie-player>
+    </div>
+  </section>  <!-- Why Us -->  <section id="why-us" class="bg-gray-100 dark:bg-gray-800 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Why Choose Us?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-4">Expert Training</h3>
+          <p>Learn from industry experts with years of experience in e-commerce and digital business.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-4">Hands-On Projects</h3>
+          <p>Work on real-world projects that give you practical exposure and portfolio-ready results.</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-4">Job Placement</h3>
+          <p>We support you with career guidance and job placement in leading companies.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- Stats -->  <section id="stats" class="container mx-auto px-4 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Our Impact</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow" data-aos="fade-up">
+        <h3 class="text-4xl font-bold text-indigo-600"><span class="count" data-count="1000">0</span>+</h3>
+        <p class="mt-2">Students Trained</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-4xl font-bold text-indigo-600"><span class="count" data-count="95">0</span>%</h3>
+        <p class="mt-2">Placement Rate</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-4xl font-bold text-indigo-600"><span class="count" data-count="50">0</span>+</h3>
+        <p class="mt-2">Industry Mentors</p>
+      </div>
+    </div>
+  </section>  <!-- Program -->  <section id="program" class="container mx-auto px-4 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Our Program</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow" data-aos="flip-left">
+        <h3 class="text-xl font-semibold mb-4">Module 1: E-Commerce Fundamentals</h3>
+        <p>Understand the basics of e-commerce, platforms, and digital strategy.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow" data-aos="flip-left" data-aos-delay="100">
+        <h3 class="text-xl font-semibold mb-4">Module 2: Digital Marketing</h3>
+        <p>Master SEO, social media, paid ads, and email marketing for online business growth.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow" data-aos="flip-left" data-aos-delay="200">
+        <h3 class="text-xl font-semibold mb-4">Module 3: Business & Career</h3>
+        <p>Learn business management, freelancing, and career opportunities in the e-commerce space.</p>
+      </div>
+    </div>
+  </section>  <!-- Testimonials Carousel -->  <section id="testimonials" class="bg-gray-100 dark:bg-gray-800 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">What Our Students Say</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+            <p class="mb-4">“do.place Academy gave me the confidence to launch my own online store. The mentors are amazing!”</p>
+            <h3 class="font-semibold">– Priya, Entrepreneur</h3>
+          </div>
+          <div class="swiper-slide bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+            <p class="mb-4">“Thanks to their guidance, I landed a digital marketing job right after completing the program.”</p>
+            <h3 class="font-semibold">– Arjun, Digital Marketer</h3>
+          </div>
+          <div class="swiper-slide bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+            <p class="mb-4">“The hands-on projects were the best part. I now have real experience to showcase.”</p>
+            <h3 class="font-semibold">– Meera, Freelancer</h3>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>  <!-- FAQ -->  <section id="faq" class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Frequently Asked Questions</h2>
+    <div class="space-y-6 max-w-3xl mx-auto">
+      <details class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow" data-aos="fade-up">
+        <summary class="font-semibold cursor-pointer">Who can join this program?</summary>
+        <p class="mt-2">Anyone interested in building a career or business in the digital economy can join.</p>
+      </details>
+      <details class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+        <summary class="font-semibold cursor-pointer">Do I need prior experience?</summary>
+        <p class="mt-2">No, our program is beginner-friendly and covers everything from basics to advanced.</p>
+      </details>
+      <details class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+        <summary class="font-semibold cursor-pointer">Is there job support?</summary>
+        <p class="mt-2">Yes, we provide career counseling, resume building, and placement opportunities.</p>
+      </details>
+    </div>
+  </section>  <!-- Footer -->  <footer class="bg-gray-900 text-white py-8 text-center">
+    <p>&copy; 2025 do.place Academy. All rights reserved.</p>
+  </footer>  <!-- Scripts -->  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.6.2/dist/countUp.umd.js"></script>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
     });
-</script>
-</body>
+
+    // Dark mode toggle
+    const darkToggle = document.getElementById('dark-mode-toggle');
+    darkToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    // Typed.js
+    new Typed('#typed-text', {
+      strings: ["Master E-Commerce", "Build Skills", "Get Jobs"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+
+    // CountUp.js
+    const counters = document.querySelectorAll('.count');
+    const options = { duration: 3 };
+    const startCounting = (el) => {
+      const countUp = new countUp.CountUp(el, el.getAttribute('data-count'), options);
+      if (!countUp.error) countUp.start();
+    };
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startCounting(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 1 });
+    counters.forEach(counter => observer.observe(counter));
+
+    // Swiper.js
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 3000 },
+      pagination: { el: ".swiper-pagination", clickable: true },
+    });
+
+    // AOS
+    AOS.init({ duration: 1000, once: true });
+  </script></body>
 </html>
