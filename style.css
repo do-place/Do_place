@@ -1,350 +1,79 @@
-/* General Styling */
-:root {
-    --primary-color: #6a0572; /* Darker purple */
-    --secondary-color: #9b59b6; /* Lighter purple */
-    --accent-color: #e74c3c; /* Red for CTA */
-    --text-color: #333;
-    --light-bg: #f4f4f4;
-    --white: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do.place Academy - E-commerce Course & Job Placement</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Do<span>.place</span> Academy</a>
+            </nav>
+        </div>
+    </header>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background: var(--white);
-}
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>E-commerce सीखो और अपना Career बनाओ</h1>
+            <p>4 महीने की एक्सपर्ट ट्रेनिंग और 3 महीने की प्रैक्टिकल इंटर्नशिप के साथ पाएं अपनी ड्रीम जॉब। 100% प्लेसमेंट असिस्टेंस।</p>
+            <a href="#" class="btn">Enroll Now</a>
+        </div>
+    </section>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">इस कोर्स में क्या खास है?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Comprehensive Curriculum</h3>
+                    <p>Shopify, Amazon FBA, Digital Marketing और Supply Chain Management में एक्सपर्ट बनें।</p>
+                </div>
+                <div class="card">
+                    <h3>Work on Live Projects</h3>
+                    <p>थ्योरी नहीं, असली कंपनियों के लाइव प्रोजेक्ट्स पर काम करके प्रैक्टिकल एक्सपीरियंस हासिल करें।</p>
+                </div>
+                <div class="card">
+                    <h3>Expert Mentors</h3>
+                    <p>इंडस्ट्री के टॉप एक्सपर्ट्स से सीखें जो आपको पर्सनल गाइडेंस और सपोर्ट देंगे।</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
+    <section class="section" style="background-color: #1e1e1e;">
+        <div class="container">
+            <h2 class="section-title">हमारा 3-Step Success Path</h2>
+            <div class="grid">
+                <div class="card path-card">
+                    <div class="step-number">1</div>
+                    <h3>4-Month Learning</h3>
+                    <p>पहले 4 महीनों में, आप E-commerce की हर बारीकी को बेसिक से एडवांस लेवल तक सीखेंगे।</p>
+                </div>
+                <div class="card path-card">
+                    <div class="step-number">2</div>
+                    <h3>3-Month Internship</h3>
+                    <p>अगले 3 महीने आप हमारी पार्टनर कंपनियों के साथ काम सीखेंगे और अपना पोर्टफोलियो बनाएंगे।</p>
+                </div>
+                <div class="card path-card">
+                    <div class="step-number">3</div>
+                    <h3>Job Placement</h3>
+                    <p>इंटर्नशिप के बाद, हम आपको टॉप कंपनियों में जॉब इंटरव्यू के लिए भेजेंगे और प्लेसमेंट में मदद करेंगे।</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-ul {
-    list-style: none;
-}
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Do.place Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-/* Header & Hero Section */
-.hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    color: var(--white);
-    padding: 20px 0 100px; /* Adjusted padding for hero content */
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://source.unsplash.com/random/1200x800/?abstract-geometric') no-repeat center center/cover; /* Placeholder background */
-    opacity: 0.1;
-    z-index: 0;
-}
-
-.hero > * { /* Ensure content is above the pseudo-element */
-    position: relative;
-    z-index: 1;
-}
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.logo a {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--white);
-}
-
-.nav-links {
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 30px;
-}
-
-.nav-links a {
-    color: var(--white);
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--accent-color);
-}
-
-.hero-content {
-    text-align: center;
-    padding: 80px 0;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.hero-content p {
-    font-size: 1.3rem;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.9;
-}
-
-.cta-button {
-    background: var(--accent-color);
-    color: var(--white);
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
-    font-weight: 600;
-}
-
-.cta-button:hover {
-    background: #c0392b; /* Darker red */
-    transform: translateY(-3px);
-}
-
-.hero-image {
-    margin-top: 50px;
-    width: 100%;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 350px; /* Adjust height as needed */
-    background: #444; /* Placeholder background */
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    font-size: 1.5rem;
-    opacity: 0.9;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-
-/* About Section */
-.about-section {
-    padding: 80px 0;
-    text-align: center;
-    background: var(--light-bg);
-}
-
-.about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-    color: var(--primary-color);
-    position: relative;
-}
-
-.about-section h2::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.about-item {
-    background: var(--white);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.about-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
-
-.about-item p {
-    color: #666;
-}
-
-/* Services Section */
-.services-section {
-    padding: 80px 0;
-    text-align: center;
-    background: var(--white);
-}
-
-.services-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-    color: var(--primary-color);
-    position: relative;
-}
-
-.services-section h2::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-}
-
-.service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background: var(--light-bg);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    color: var(--secondary-color);
-}
-
-.card p {
-    color: #555;
-}
-
-/* Contact Section */
-.contact-section {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-    color: var(--white);
-    padding: 80px 0;
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: var(--white);
-}
-
-.contact-section p {
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-    opacity: 0.9;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    color: var(--text-color);
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #888;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-/* Footer */
-footer {
-    background: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 0.9rem;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide for mobile, could add a hamburger menu */
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .about-section h2,
-    .services-section h2,
-    .contact-section h2 {
-        font-size: 2rem;
-    }
-
-    .about-grid, .service-cards {
-        grid-template-columns: 1fr;
-    }
-}
+</body>
+</html>
